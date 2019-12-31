@@ -22,7 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w+!t3syk2g_pv(xq^_9!u9pu-l@^3t4wp6(0^^ig%j#8z1pqi!'
+# SECRET_KEY = 'w+!t3syk2g_pv(xq^_9!u9pu-l@^3t4wp6(0^^ig%j#8z1pqi!' - gerada pelo django automaticamente
+
+# config decouple - desacoplar esta key e toda vez que extrair uma configuração
+# tem que atualizar o env-sample
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
