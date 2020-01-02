@@ -3,6 +3,8 @@ Codigo desenvolvido do curso Django segundo orientação do www.python.pro.br
 
 Aplicação disponivel no https://git.heroku.com/jlplautzdjango.git
 
+Otimizado upload com Collectfats
+
 [![Build Status](https://travis-ci.org/jlplautz/curso-django.svg?branch=master)](https://travis-ci.org/jlplautz/curso-django)
 [![Updates](https://pyup.io/repos/github/jlplautz/curso-django/shield.svg)](https://pyup.io/repos/github/jlplautz/curso-django/)
 [![Python 3](https://pyup.io/repos/github/jlplautz/curso-django/python-3-shield.svg)](https://pyup.io/repos/github/jlplautz/curso-django/)
