@@ -8,5 +8,4 @@ Aplicação disponivel no https://git.heroku.com/jlplautzdjango.git
 [![Python 3](https://pyup.io/repos/github/jlplautz/curso-django/python-3-shield.svg)](https://pyup.io/repos/github/jlplautz/curso-django/)
 [![codecov](https://codecov.io/gh/jlplautz/curso-django/branch/master/graph/badge.svg)](https://codecov.io/gh/jlplautz/curso-django)
 
-
 Testes 01
