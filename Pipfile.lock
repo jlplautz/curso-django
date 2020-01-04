@@ -16,6 +16,7 @@
         ]
     },
     "default": {
+
         "asgiref": {
             "hashes": [
                 "sha256:7e06d934a7718bf3975acbf87780ba678957b87c7adc056f13b6215d610695a0",
