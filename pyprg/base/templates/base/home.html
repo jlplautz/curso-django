@@ -10,9 +10,9 @@
 		<div class="col-md-12">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -24,10 +24,13 @@
 				<h2>
 					Curso de Python com Luciano Ramalho
 				</h2>
-				<p>
-					Confira em breve mais informaçoes sobre o curso que será ministrado pelo autor do livro
-                    <a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank" >Python Fluente</a>
-				</p>
+                <h4 class="mt-4">Matriculas Abertas! Custo R$ 800,00</h4>
+                <!-- INICIO DO BOTAO PAGSEGURO -->
+<a href="javascript:void(0)" onclick="PagSeguroLightbox('41B988DF5D5DC23EE41CFF8FF01D00D8'); return false;">
+    <img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
+<script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                <!-- FIM DO BOTAO PAGSEGURO -->
+
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -35,6 +38,10 @@
 						<h5 class="card-header">
 							Mais detalhes sobre o instrutor
 						</h5>
+                        				<p>
+					Confira em breve mais informaçoes sobre o curso que será ministrado pelo autor do livro
+                    <a href="http://shop.oreilly.com/product/0636920032519.do" target="_blank" >Python Fluente</a>
+				</p>
 						<div class="card-body">
 							<p class="card-text">
 								<img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
