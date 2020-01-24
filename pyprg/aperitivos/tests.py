@@ -10,6 +10,7 @@ from django.urls import reverse
 # args indica os paramentos que vamos passar para esta url vamos definir a slug => com o nome do video
 # este args é uma tupla e vamos finalizar com virgula esta resp vamos retornar como resultado da criação da fixture
 # para todos os testes que utilizarem  a emulação da chamada get
+from pyprg.django_assertions import assert_contains
 
 
 @pytest.fixture
@@ -23,3 +24,11 @@ def test_status_code(resp):
     que esta resposta retorna com status_code com valor 200 (status code de sucesso)
     '''
     assert resp.status_code == 200
+
+
+def test_titulo_video(resp):
+    assert_contains(resp, '<h1>Video Aperitivo: Motivação</h1>')
+
+
+def test_conteudo_video(resp):
+    assert_contains(resp, '<iframe src="https://player.vimeo.com/video/386792293"')
