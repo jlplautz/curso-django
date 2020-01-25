@@ -1,5 +1,6 @@
 import pytest
 from django.urls import reverse
+from pyprg.django_assertions import assert_contains
 
 
 # chamar esta fixture resp => porque vai ser gerada uma resposta http.
@@ -10,7 +11,6 @@ from django.urls import reverse
 # args indica os paramentos que vamos passar para esta url vamos definir a slug => com o nome do video
 # este args é uma tupla e vamos finalizar com virgula esta resp vamos retornar como resultado da criação da fixture
 # para todos os testes que utilizarem  a emulação da chamada get
-from pyprg.django_assertions import assert_contains
 
 
 @pytest.fixture
@@ -27,7 +27,7 @@ def test_status_code(resp):
 
 
 def test_titulo_video(resp):
-    assert_contains(resp, '<h1>Video Aperitivo: Motivação</h1>')
+    assert_contains(resp, '<h1 class="mt-4 mb-3">Video Aperitivo: Motivação</h1>')
 
 
 def test_conteudo_video(resp):
