@@ -8,6 +8,8 @@ flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
+pytest = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 django = "*"

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from pyprg.aperitivos.views import video
+from pyprg.aperitivos.views import video, indice
 
 app_name = 'aperitivos'
 urlpatterns = [
@@ -9,4 +9,6 @@ urlpatterns = [
     # que podem aparecer compondo o path do endereço deste recurso
     # parametro video será sem () pois queremos acesso direto a view de video
     path('<slug:slug>', video, name='video'),
+    # path fica vazio pois retorna na para o template aperitivos (esta defino no urls global
+    path('', indice, name='indice'),
 ]
