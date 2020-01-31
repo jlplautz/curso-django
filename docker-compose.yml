@@ -12,4 +12,4 @@ services:
       - POSTGRES_PASSWORD=lingara
       - POSTGRES_USER=jlplautz
     ports:
-      - 5434-5432
+      - 5434:5432
